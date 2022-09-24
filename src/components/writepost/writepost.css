@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin:0;
+}
+
+.topbar{
+    height:4rem;
+    display:flex;
+    flex-direction: row;
+    padding:0px 3rem;
+    justify-content: space-between;
+}
+
+.titleContainer{
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    height:40px;
+    width:40px;
+}
+
+.title{
+    font-weight:600;
+    margin:0px 30px;
+}
+
+.closeContainer{
+    display: flex;
+    align-items: center;
+}
+
+.closeIcon{
+    padding:10px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.closeIcon:hover{
+    background-color: rgb(185, 190, 221);
+}
+
+.postContainer{
+    display: flex;
+    flex-direction: column;
+    padding:2rem 0px;
+}
+
+.post{
+    width:80%;
+    height:auto;
+    align-self: center;
+}
+
+.coverImg{
+    width: 50%;
+}
+
+.coverImgButtons{
+    width: 50%;
+    display:flex;
+    padding:1rem;
+    align-items: center;
+}
+
+.changeCoverImg{
+    font-size: 14px;
+    font-weight: 600;
+    padding:10px;
+    border: 2px solid rgb(184, 178, 178);
+    border-radius:8px;
+    margin-right:2.5rem;
+    cursor: pointer;
+}
+
+.removeCoverImg{
+    color:rgb(212, 26, 26);
+    font-size: 14px;
+    font-weight: 600;
+    padding:10px;
+    border-radius:8px;
+    background-color: transparent;
+    cursor:pointer
+}
+
+.removeCoverImg:hover{
+    background-color:rgb(241, 241, 241);
+}
+
+.addCoverImgContainer{
+    margin: 1rem 0;
+}
+
+.addCoverImg{
+    font-size: medium;
+    font-weight: 500;
+    padding:12px;
+    border: 2px solid rgb(184, 178, 178);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.titleInputContainer{
+    margin:1rem 0;
+}
+
+.titleInput{
+    font-size: 50px;
+    font-weight: 900;
+    border:none;
+}
+
+.titleInput:focus{
+    outline: none;
+}
+
+.tagContainer{
+    margin:1rem 0;
+}
+
+.tags{
+    list-style: none;
+}
+
+.tag{
+    display: inline-block;
+    margin-right:12px;
+}
+
+.tagContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(226, 224, 224);
+    padding:6px;
+    border-radius: 4px;
+}
+
+.removeTag{
+    padding: 4px;
+    font-size: small;
+    cursor: pointer;
+}
+
+.removeTag:hover{
+    color:rgb(218, 117, 117);
+}
+
+.tagName{
+    margin-right:1rem;
+}
+
+.addTagContainer{
+    display:flex;
+    margin:2rem 0;
+}
+
+.tagInput{
+    font-size: medium;
+    border:none;
+}
+
+.tagInput{
+    outline: none;
+}
+
+.addTag{
+    font-size: 23px;
+    color:rgb(49, 71, 196);
+    cursor: pointer;
+}
+
+.saveContainer{
+    align-self: center;
+    width:80%;
+    margin:2rem 0;
+}
+
+.publish{
+    color:white;
+    font-size: medium;
+    font-weight: 600;
+    background-color: rgb(71, 96, 240);
+    padding:12px;
+    border:none;
+    border-radius:4px;
+    margin-right:2.5rem;
+    cursor: pointer;
+}
+
+.publish:hover{
+    background-color: rgb(49, 71, 196);
+}
+
+.saveDraft{
+    font-size: medium;
+    padding:12px;
+    border:none;
+    border-radius:4px;
+    background-color: transparent;
+    cursor:pointer
+}
+
+.saveDraft:hover{
+    background-color: rgb(217, 219, 230);
+}
+
+
+
+
