@@ -9,14 +9,16 @@ import Cookies from 'universal-cookie'
 
 const cookies = new Cookies()
 
+const token = cookies.get('token')
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App/>}/>
+      <Route path='/' element={token?<App/>:<Navigate to='/login' />}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/new' element={cookies.get('token')?<WritePost/>:<Navigate to='/login' />}/>
+      <Route path='/new' element={token?<WritePost/>:<Navigate to='/login' />}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

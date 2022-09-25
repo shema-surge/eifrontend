@@ -1,0 +1,29 @@
+.poptagContainter{
+    padding:1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.top{
+    font-size: medium;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.poptag{
+    padding: 0.4rem 0.4rem;
+    width: 5rem;
+    margin: 0.4rem 0;
+    color: rgb(41, 41, 41);
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.poptag:hover{
+    background-color: rgb(209, 211, 212);
+    color:blue;
+    text-decoration: underline;
+}
+

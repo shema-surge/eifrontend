@@ -4,12 +4,18 @@ import {Routes} from 'react-router-dom'
 import './App.css'
 import Topbar from './components/topbar/Topbar'
 import Posts from './components/posts/posts'
+import Leftbar from './components/leftbar/Leftbar'
 
 function App() {
 
   return (
     <div className="App">
-      <Posts/>
+      <Topbar/>
+      <div className="contentContainer">
+        <Leftbar/>
+        <Posts/>
+      </div>
+      
     </div>
   )
 }

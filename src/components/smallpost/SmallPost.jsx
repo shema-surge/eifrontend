@@ -7,7 +7,7 @@ import { AiOutlineHeart, AiOutlineMessage } from 'react-icons/ai'
 
 export default function SmallPost(props) {
     return (<div className="smallPost">
-        <a href=""><img src={props.post.coverImg} alt="" className="cover" /></a>
+        {/* <a href=""><img src={props.post.coverImg} alt="" className="cover" /></a> */}
         <div className="profile">
             <a href=""><img src={avatar} alt="" className="accountImg" /></a>
             <div className="postDetails">
