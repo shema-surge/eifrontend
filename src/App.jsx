@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import WritePost from './components/writepost/WritePost'
-import Login from './components/login/Login'
-import Signup from './components/signup/Signup'
+import { useEffect, useState } from 'react'
 import {Routes} from 'react-router-dom'
 
+import './App.css'
+import Topbar from './components/topbar/Topbar'
+import Posts from './components/posts/posts'
+
 function App() {
-  //const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      {/* <WritePost/> */}
-      {/* <Login/> */}
-      {/* <Signup/> */}
+      <Posts/>
     </div>
   )
 }

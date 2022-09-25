@@ -29,13 +29,13 @@ export default function Login(){
                 password
             }
         }).then((response)=>{
-            cookies.set('token',response.data,{path:'/'})
+            cookies.set('token',response.data.token,{path:'/',maxAge:60*60})
             console.log(response.data)
             if(errorMsg) setErrorMsg('')
             navigate("/new")
         }).catch((err)=>{
             console.error(err)
-            if(!errorMsg) setLoginFailure(err.message)
+            if(!errorMsg) setErrorMsg(err.message)
         })
 
     }

@@ -1,0 +1,95 @@
+.topbarContainer{
+    display:flex ;
+    padding: 0.4rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(252, 252, 252);
+}
+
+.leftContainer{
+    display: flex;
+    align-items: center;
+}
+
+.topbarlogo{
+    color: rgb(252, 252, 252);
+    background-color: rgb(15, 60, 207);
+    font-size: large;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 3px;
+    padding:0.6rem 1.2rem;
+    margin-right: 2rem;
+}
+
+.searchContainer{
+    border:1.8px solid gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.searchInput{
+    border: none;
+    padding: 0.6rem;
+    width: 15rem;
+    background-color: transparent;
+}
+
+.searchInput:focus{
+    outline: none;
+}
+
+.searchButton{
+    font-size: x-large;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+.searchButton:hover{
+    background-color: rgb(214, 219, 243);
+}
+
+.rightContainer{
+    display: flex;
+    align-items: center;
+}
+
+.newPost{
+    color: beige;
+    color: rgb(15, 60, 207);
+    border: 2px solid rgb(15, 60, 207);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding:0.5rem 1.4rem;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.newPost:hover{
+    color:white;
+    background-color: rgb(15, 60, 207);
+}
+
+.notifications{
+    font-size: x-large;
+    padding:0.4rem;
+    margin-right: 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.notifications:hover{
+    background-color: rgb(183, 196, 240);
+}
+
+.profilePic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
